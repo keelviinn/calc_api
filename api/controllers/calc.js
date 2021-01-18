@@ -22,11 +22,11 @@ module.exports = () => {
     } else {
       return res.json({error: 'Banco vazio'})
     }
-    return res.json(response);
+    return res.status(200).json(response);
   }
 
   controller.saveCalc = (req, res) => {
-    const obj = calcDB;     
+    const obj = calcDB;
     obj.push({
       name: req.body.name,
       numberA: req.body.numberA,
