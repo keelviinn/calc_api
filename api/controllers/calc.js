@@ -7,7 +7,7 @@ module.exports = () => {
     const data = calcDB;
     let response = []
     if (data.length >= 1) {
-      for (const item of data.reverse()) {
+      for (const item of data) {
         const calculator = item.numberA * item.numberB
         const numberA = item.numberA
         const numberB = item.numberB
